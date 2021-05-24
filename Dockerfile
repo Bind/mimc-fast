@@ -4,7 +4,6 @@ RUN USER=root cargo new --bin mimc-fast
 
 WORKDIR /mimc-fast
 
-COPY ./Cargo.toml ./Cargo.toml
 RUN cargo build --release
 RUN rm src/*.rs
 
